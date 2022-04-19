@@ -1,0 +1,215 @@
+.headerBar {background: #8b6d6d;text-align: center;}
+.headerBar h1 {color: #06D85F; font-size: 24px;padding: 10px 0px;}
+.bodyPanel {display: flex;width: 100%;flex-wrap: wrap;padding: 0px 15px;}
+.LeftSide {width: 70%;}
+.rightSide {width: 30%;float: left;}
+.tableData table { border-collapse: collapse; width: 80%; }  
+.tableData td, .tableData th { border: 1px solid #dddddd;text-align: left; padding: 8px;  }
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: black;
+    background-color: #06D85F;
+    /* border: 2px solid #06D85F; */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #6fffab;
+    box-shadow: 0 3px 6px 0 #555;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  .popup {background: transparent !important;}
+
+.formtextinnr {background: #fff35d;padding: 10px 20px;text-align: center;border-radius: 4px;}
+
+.formtextinnr h2 {margin-bottom: 0;font-family: fangsong;}
+
+.formtextinnr p.red {margin-top: 10px;margin-bottom: 0;color: #ff5a5a;font-family: fangsong;}
+
+.formtextinnr p {margin: 0;text-align: left;font-family: fangsong;}
+
+.popup .content .form-group {padding: 10px;background: #fff;margin: 10px 0 12px;border-radius: 4px;}
+
+.popup .content .form-group label {width: 100%;display: block;margin-bottom: 10px;}
+
+.popup .content input[type="submit"], .popup .content a.close {
+  padding: 14px 25px;
+  height: 50px;
+  float: right;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  background: #ddd359;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  right: 0;
+  top: 0;
+  color: #000;
+}
+
+.popup .content a.close {top: 1px;margin-left: 10px;}
+
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  /* changes */
+
+  .container {
+    display: "flex";
+    flex-direction: "column";
+    border: #000;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+}
+
+.headerBar {
+    margin:10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableData th{
+  background-color: #000;
+  color: white;
+  border: 10px solid white;
+  /* border-spacing: 30px; */
+}
+
+/* #date {
+  background-color: rgb(237, 169, 41);
+  color: black;
+} */
+
+#product_purchased {
+  background-color: rgb(0, 213, 255);
+  color: black;
+}
+
+#price {
+  background-color: rgb(131, 56, 171);
+  color: black;
+}
+
+#payee {
+  background-color: rgb(86, 122, 164);
+  color: black;
+}
+
+hr{
+  margin: 10px;
+}
+
+#productPurchased {
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+#productPrice{
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+#date{
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+.required {
+  color: red;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #d8ce04;
+  box-shadow: 0 3px 6px 0 rgb(255, 255, 255);
+}
+
+.formClose {
+  border-radius: 5px;
+  font-weight: 20;
+}
+

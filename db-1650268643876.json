@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "payeeName": "Yash",
+      "purchasedProduct": "asd",
+      "productPrice": "212",
+      "productDate": "2022-04-01",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
